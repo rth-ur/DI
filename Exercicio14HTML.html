@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 14</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+    
+    <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <div>
+            <label for="">Nome:</label>
+            <input type="text" name="txtNome" id="txtNome"> 
+        </div>
+        <br>
+        
+        <div>
+            <label for="">Endereço:</label>
+            <input type="text" name="idEndereço" id="idEndereço"> 
+        </div>
+        <br>
+
+        <div>
+            <label for="">Cidade:</label>
+            <input type="text" name="txCidade" id="txtCidade"> 
+        </div>
+        <br>
+
+        <div>
+            <label for="">Estado:</label>
+            <select name="estado" id="estado">
+                <option value="1">São Paulo</option>
+            </select>
+        </div>
+        <br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Dados Profissionais</legend>
+
+        <div>
+            <div>
+                <label for="">Natureza do Cargo</label><br>
+                <input type="checkbox" name="natCargo" id="natCargo" value="1">Gerência <br>
+                <input type="checkbox" name="natCargo" id="natCargo" value="2">Financeiro <br>
+                <input type="checkbox" name="natCargo" id="natCargo" value="3">Recepção <br>
+                <input type="checkbox" name="natCargo" id="natCargo" value="4">Administrativo <br>
+                <input type="checkbox" name="natCargo" id="natCargo" value="5">jurídico <br>
+            
+
+                <label for="">Area de interesse</label>
+                <input type="radio" name="natCargo" id="natCargo" value="1">Computação <br>
+                <input type="radio" name="natCargo" id="natCargo" value="1">Biologia <br>
+                <input type="radio" name="natCargo" id="natCargo" value="1">Meio Ambiente <br>
+                <input type="radio" name="natCargo" id="natCargo" value="1">Engenharia <br>
+                <input type="radio" name="natCargo" id="natCargo" value="1">História <br>
+                <br>
+                <div>
+                    <Label for="">Mini Curriculo</Label><br>
+                    <textarea name="txtcurriculo" id="txcurriculo" cols="30" rows="10" maxlength="300"></textarea>
+                </div>
+                <br>
+            </div>
+            <br>
+        </div>        
+
+    </fieldset>
+
+    <br>
+        <button type="submit">Cadastrar</button>
+    
+</body>
+</html>

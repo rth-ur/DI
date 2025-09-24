@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo 13 hmtl - Formulários</title>
+</head>
+<body>
+    <h1>Exemplo 13 html - formulários</h1>
+    <form action="paginaDestino.php" method="post">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <div>
+                <label for="">Nome</label> <br>
+                <input type="text" name="txtNome" id="txtNome" required> <br>
+            </div> 
+            <br>
+
+            <div>
+                <label for="">Ano do Nascimento</label> <br>
+                <input type="number" name="txtAnoNascimento" id="txtAnoNascimento" min="1950" max="2100" step="20"> <br>
+            </div> 
+            <br>
+
+            <div>
+                <label for="">E-mail</label> <br>
+                <input type="email" name="txtEmail" id="txtEmail" autofocus> <br>
+            </div> 
+            <br>
+
+        </fieldset>
+        <br>
+
+        <fieldset>
+            <legend>Preferencias</legend>
+            <div>
+                <label for="">Passeios Favoritos</label><br>
+                <input type="checkbox" name="cbLocais" id="cbLocais" value="1"> Cachoeira<br>
+                <input type="checkbox" name="cbLocais" id="cbLocais" value="2"> Praia <br>
+                <input type="checkbox" name="cbLocais" id="cbLocais" value="3"> Trilha <br>
+                <input type="checkbox" name="cbLocais" id="cbLocais" value="4"> Cidade <br>
+                <input type="checkbox" name="cbLocais" id="cbLocais" value="5"> Fazenda <br>
+            </div>
+            <br>
+
+            <div>
+                <label for="">Selecione uma cor Favorita</label>
+                <input type="color" name="txtCor" id="txtCor">
+            </div>
+            <br>
+
+            <div>
+                <Label for="">Descreva sua jornada</Label><br>
+                <textarea name="txtJornada" id="txtJornada" cols="30" rows="10" maxlength="300"></textarea>
+            </div>
+            <br>
+
+            <div>
+                <label for="">Data de Cadastro</label>
+                <input type="date" name="txtData" id="txtData" min="2025-01-01" max="2025-09-30">
+            </div>
+
+        </fieldset>
+        <br>
+        <button type="submit">Cadastrar</button>
+
+
+    </form>
+</body>
+</html>

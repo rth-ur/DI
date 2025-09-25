@@ -1,0 +1,57 @@
+.div1{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    text-align: center;
+    text-transform: capitalize;
+    font-weight: 800;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color:rgba(255, 140, 0, 0.1);  
+    margin: 40px;
+    padding: 25px;
+    border-left: solid darkorange;
+
+}
+
+.div2{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    text-align: justify;
+    font-weight: 800;
+    font-family: fantasy;
+    background-color: rgba (180, 250, 180, 0.1);  
+    margin: 40px;
+    padding: 25px;
+    border-left: solid rgb(180, 250, 180) 8px;
+
+}
+
+.div3{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    text-align: justify;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(1, 33, 5, 0.1);  
+    margin: 40px;
+    padding: 25px;
+    border-left: solid rgb(1, 33, 5) 8px;
+    color: darkgreen;
+}
+
+.div4{
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    text-align: justify;
+    font-weight: 800;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: rgba(219, 4, 239, 0.1);  
+    margin: 40px;
+    padding: 25px;
+    border-left: solid rgb(219, 4, 239) 8px;
+    color: black;
+}
+
+#paragrafo1{
+    font-style: italic;
+    color: crimson;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    text-align: center;
+}

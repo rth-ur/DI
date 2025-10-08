@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 24 CSS</title>
+    <style>
+        .estiloCard {
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em, rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <h1>Sistemas de Vendas</h1>
+        <div class="card estiloCard">
+            <div class="card-header bg-dark text-white">
+                Pedidos
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-3">
+                        <label for="">Data Pedido</label>
+                        <input type="date" name="txtDataPedido" id="txtDataPedido" class="form-control">
+                    </div>
+                    <div class="col-9">
+                        <label for="">Funcionário</label>
+                        <select class="form-select form-control" aria-label="Default select example">
+                            <option selected>Selecione um funcionário</option>
+                            <option value="1">Pedro</option>
+                            <option value="2">José das Couves</option>
+                            <option value="3">Maria das Alfaces</option>
+                            <option value="4">Marcos de Pietro</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-9">
+                        <label for="">Cliente</label>
+                        <select class="form-select form-control" aria-label="Default select example">
+                            <option selected>Selecione um Cliente</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <label for="">Valor Pedido</label>
+                        <input type="number" name="nbValorPedido" id="nbValorPedido" class="form-control">
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <div class="row">
+                        <div class="col-6">
+                            <button type="button" class="btn btn-dark">Registrar Venda</button>
+                            <button type="button" class="btn btn-dark">Listar Vendas</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

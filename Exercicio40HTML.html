@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EXERCICIO 40| HTML E CSS</title>
+    <style>
+        .page {
+            display: grid;
+            padding: 10px;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            grid-gap: 10px;
+            grid-template-areas: "header header header header header header" "menu main main main right right" "menu footer footer footer footer footer";
+            grid-template-rows: 10vh 75vh 10vh;
+        }
+
+        .item {
+            padding: 10px 0;
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: lightskyblue;
+        }
+
+        .menu {
+            grid-area: menu;
+            background-color: lightgreen;
+        }
+
+        .main {
+            grid-area: main;
+            background-color: lightpink;
+        }
+
+        .right {
+            grid-area: right;
+            background-color: darkorange;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: deeppink;
+            grid-template-rows: minmax(150px, 300px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page">
+        <div class="item header">HEADER</div>
+        <div class="item menu">MENU</div>
+        <div class="item main">MAIN</div>
+        <div class="item right">RIGHT</div>
+        <div class="item footer">FOOTER</div>
+    </div>
+</body>
+
+</html>

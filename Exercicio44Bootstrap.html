@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exercício 44 - Bootstrap</title>
+    <style>
+        .painel {
+            box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+                rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+            font-weight: bold;
+            border-top: solid darkorange 6px;
+            padding: 25px;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <h1>Exemplo 44 Bootstrap - Componentes</h1>
+        <div class="painel">
+            <div class="mb-4">
+                <label for="">Nome</label>
+                <input type="text" name="" id="" class="form-control">
+            </div>
+            <div class="mb-4">
+                <label for="">Data de Nascimento</label>
+                <input type="date" name="" id="" class="form-control">
+            </div>
+            <div class="mb-4">
+                <label for="">Email</label>
+                <input type="email" name="" id="" class="form-control">
+            </div>
+            <div class="mb-4">
+                <label for="">Preferências</label>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Front-end
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Backend
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Fullstack
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                        Infraestrutura
+                    </label>
+                </div>
+            </div>
+            <div class="mb-4">
+                <label for="">Região</label>
+                <select class="form-select" aria-label="Default select example">
+                    <option selected>Selecione uma Região</option>
+                    <option value="1">Norte</option>
+                    <option value="2">Sul</option>
+                    <option value="3">Nordeste</option>
+                    <option value="3">Centro-Oeste</option>
+                </select>
+            </div>
+            <div class="mb-4">
+                <h4>Clientes Cadastrados</h4>
+                <table class="table table-bordered border-info table-hover">
+                    <thead class="bg-info">
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Data de Nascimento</th>
+                            <th scope="col">Email</th>
+                            <th scope="col">Telefone</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>JOSÉ DA SILVA</td>
+                            <td>01/01/2000</td>
+                            <td>jose@gmail.com</td>
+                            <td>(61) 9 3232-7070</td>
+                        </tr>
+                        <tr>
+                            <td>MARIA DA SILVA</td>
+                            <td>01/01/2000</td>
+                            <td>jose@gmail.com</td>
+                            <td>(61) 9 3232-7070</td>
+                        </tr>
+                        <tr>
+                            <td>LARA DA SILVA</td>
+                            <td>01/01/2000</td>
+                            <td>jose@gmail.com</td>
+                            <td>(61) 9 3232-7070</td>
+                        </tr>
+                        <tr>
+                            <td>ÍRIS DA SILVA</td>
+                            <td>01/01/2000</td>
+                            <td>jose@gmail.com</td>
+                            <td>(61) 9 3232-7070</td>
+                        </tr>
+                        <tr>
+                            <td>RAFAEL DA SILVA</td>
+                            <td>01/01/2000</td>
+                            <td>jose@gmail.com</td>
+                            <td>(61) 9 3232-7070</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="text-end">
+                <button type="button" class="btn btn-info">Salvar</button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

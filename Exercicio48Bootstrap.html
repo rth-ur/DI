@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <title>Exemplo Pedido</title>
+    <title>Exemplo 48 - Bootstrap</title>
+    <!-- Produto -->
     <style>
         .painel {
             box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
@@ -25,27 +26,28 @@
         <div class="card mt-5 painel">
             <div class="card">
                 <div class="card-header bg-primary text-white">
-                    Pedido
+                    Produto
                 </div>
 
                 <div class="card-body">
 
                     <div class="text-end mb-3">
-                        <button type="button" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#modalPedido">
-                            Novo Pedido
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#modalProduto">
+                            Novo Produto
                         </button>
                     </div>
 
-                    <h5>Pedidos Cadastrados</h5>
+                    <h5>Produtos Cadastrados</h5>
 
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">Id</th>
-                                <th scope="col">Data</th>
-                                <th scope="col">Funcionário</th>
-                                <th scope="col">Cliente</th>
-                                <th scope="col">Valor Total</th>
+                                <th>Id</th>
+                                <th>Nome</th>
+                                <th>Preço</th>
+                                <th>Categoria</th>
+                                <th>Estoque</th>
                                 <th>Ações</th>
                             </tr>
                         </thead>
@@ -53,13 +55,24 @@
                         <tbody>
                             <tr>
                                 <td>1</td>
-                                <td>10/02/2024</td>
-                                <td>João</td>
-                                <td>Maria</td>
-                                <td>150.00</td>
+                                <td>Mouse Bloody a91 </td>
+                                <td>130.00</td>
+                                <td>Periféricos</td>
+                                <td>45</td>
                                 <td>
-                                    <button class="btn btn-dark btn-sm" data-bs-toggle="modal"
-                                        data-bs-target="#modalEditarPedido">Editar</button>
+                                    <button class="btn btn-dark btn-sm">Editar</button>
+                                    <button class="btn btn-danger btn-sm">Excluir</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Teclado Mecânico HyperX Alloy Origns</td>
+                                <td>450.00</td>
+                                <td>Periféricos</td>
+                                <td>20</td>
+                                <td>
+                                    <button class="btn btn-dark btn-sm">Editar</button>
                                     <button class="btn btn-danger btn-sm">Excluir</button>
                                 </td>
                             </tr>
@@ -71,36 +84,37 @@
             </div>
         </div>
 
-        <!-- Modal Novo Pedido -->
-        <div class="modal fade" id="modalPedido" tabindex="-1" aria-labelledby="modalPedidoLabel" aria-hidden="true">
+        <!-- Modal -->
+        <div class="modal fade" id="modalProduto" tabindex="-1" aria-labelledby="modalProdutoLabel" aria-hidden="true">
+
             <div class="modal-dialog modal-lg">
                 <div class="modal-content">
 
                     <div class="modal-header">
-                        <h5 class="modal-title" id="modalPedidoLabel">Novo Pedido</h5>
+                        <h5 class="modal-title" id="modalProdutoLabel">Novo Produto</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                     </div>
 
                     <div class="modal-body">
 
                         <div class="mb-3">
-                            <label class="form-label">Data do Pedido</label>
-                            <input type="date" id="dataPedido" class="form-control">
+                            <label class="form-label">Nome</label>
+                            <input type="text" class="form-control">
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">Funcionário Id</label>
-                            <input type="number" id="funcionarioId" class="form-control">
+                            <label class="form-label">Preço</label>
+                            <input type="number" class="form-control">
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">Cliente Id</label>
-                            <input type="number" id="clienteId" class="form-control">
+                            <label class="form-label">Categoria</label>
+                            <input type="text" class="form-control">
                         </div>
 
                         <div class="mb-3">
-                            <label class="form-label">Valor Total</label>
-                            <input type="number" step="0.01" id="valorTotal" class="form-control">
+                            <label class="form-label">Estoque</label>
+                            <input type="number" class="form-control">
                         </div>
 
                     </div>
@@ -112,62 +126,10 @@
 
                 </div>
             </div>
-        </div>
 
-
-        <!-- Modal EDITAR -->
-        <div class="modal fade" id="modalEditarPedido" tabindex="-1" aria-labelledby="modalEditarPedidoLabel"
-            aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="modalEditarPedidoLabel">Editar Pedido</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-
-                    <div class="modal-body">
-
-
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <label class="form-label">Funcionário</label>
-                                <input type="text" class="form-control">
-                            </div>
-
-                            <div class="col-md-4">
-                                <label class="form-label">Data do Pedido</label>
-                                <input type="date" class="form-control">
-                            </div>
-                        </div>
-
-
-                        <div class="row mb-3">
-                            <div class="col-md-4">
-                                <label class="form-label">Cliente</label>
-                                <input type="text" class="form-control">
-                            </div>
-
-                            <div class="col-md-4">
-                                <label class="form-label">Valor Total</label>
-                                <input type="number" step="0.01" class="form-control">
-                            </div>
-                        </div>
-
-                    </div>
-
-
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
-                        <button type="button" class="btn btn-dark">Salvar Alterações</button>
-                    </div>
-
-                </div>
-            </div>
         </div>
 
     </div>
-
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>

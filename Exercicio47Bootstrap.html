@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Cadastro de Funcionários" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 47 - Bootstrap</title>
+    <!-- Funcionario -->
+    <style>
+        .painel {
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            font-weight: bold;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-sm">
+        <div class="card mt-5 painel">
+            <div class="card">
+                <div class="card-header bg-dark text-white">
+                    Funcionarios
+                </div>
+                <div class="card-body">
+                    <div class="text-end mb-3">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#modalFuncionario">
+                            Novo Funcionário
+                        </button>
+                    </div>
+
+                    <h5>Funcionários Cadastrados</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nome</th>
+                                <th scope="col">CPF</th>
+                                <th scope="col">E-mail</th>
+                                <th scope="col">Cargo</th>
+                                <th scope="col">Salário</th>
+                                <th scope="col">Data Admissão</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr>
+                                <td>1</td>
+                                <td>Arthur Clemente</td>
+                                <td>111.111.111-11</td>
+                                <td>arthur.arthur@empresa.com</td>
+                                <td>Repositor</td>
+                                <td>R$ 99.000,00</td>
+                                <td>10/02/2024</td>
+                                <td>
+                                    <div class="d-flex gap-2">
+                                        <button type="button" class="btn btn-dark btn-sm">Editar</button>
+                                        <button type="button" class="btn btn-dark btn-sm">Excluir</button>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            tr>
+                            <td>1</td>
+                            <td>Arthur Clemente</td>
+                            <td>111.111.111-11</td>
+                            <td>arthur.arthur@empresa.com</td>
+                            <td>Repositor</td>
+                            <td>R$ 99.000,00</td>
+                            <td>10/02/2024</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <button type="button" class="btn btn-dark btn-sm">Editar</button>
+                                    <button type="button" class="btn btn-dark btn-sm">Excluir</button>
+                                </div>
+                            </td>
+                            </tr>
+
+                            tr>
+                            <td>1</td>
+                            <td>Arthur Clemente</td>
+                            <td>111.111.111-11</td>
+                            <td>arthur.arthur@empresa.com</td>
+                            <td>Repositor</td>
+                            <td>R$ 99.000,00</td>
+                            <td>10/02/2024</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <button type="button" class="btn btn-dark btn-sm">Editar</button>
+                                    <button type="button" class="btn btn-dark btn-sm">Excluir</button>
+                                </div>
+                            </td>
+                            </tr>
+
+                            tr>
+                            <td>1</td>
+                            <td>Fulando de tal</td>
+                            <td>111.111.111-11</td>
+                            <td>arthur.arthur@empresa.com</td>
+                            <td>estagiario</td>
+                            <td>R$ 1.000,00</td>
+                            <td>10/02/2024</td>
+                            <td>
+                                <div class="d-flex gap-2">
+                                    <button type="button" class="btn btn-dark btn-sm">Editar</button>
+                                    <button type="button" class="btn btn-dark btn-sm">Excluir</button>
+                                </div>
+                            </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal Funcionário -->
+        <div class="modal fade" id="modalFuncionario" tabindex="-1" aria-labelledby="modalFuncionarioLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalFuncionarioLabel">Cadastrar Funcionário</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <div class="row">
+                            <div class="col-4">
+                                <label for="nome" class="form-label">Nome</label>
+                                <input type="text" name="nome" id="nome" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- CPF | E-mail -->
+                        <div class="row">
+                            <div class="col-md-6">
+                                <label for="cpf" class="form-label">CPF</label>
+                                <input type="text" name="cpf" id="cpf" class="form-control">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label">E-mail</label>
+                                <input type="email" name="email" id="email" class="form-control">
+                            </div>
+                        </div>
+
+                        <!-- cargo salario e admissao -->
+                        <div class="row mb-3">
+                            <div class="col-md-4">
+                                <label for="cargo" class="form-label">Cargo</label>
+                                <input type="text" name="cargo" id="cargo" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="salario" class="form-label">Salário</label>
+                                <input type="number" step="0.01" name="salario" id="salario" class="form-control">
+                            </div>
+                            <div class="col-md-4">
+                                <label for="dataAdmissao" class="form-label">Data de Admissão</label>
+                                <input type="date" name="dataAdmissao" id="dataAdmissao" class="form-control">
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-primary">Salvar</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>Exemplo 53 JavaScript</title>
+</head>
+
+<body>
+    <div class="container-sm">
+        <h1>Calculadora IMC</h1>
+
+        <div class="form-group">
+            <label for="text">Informe o Peso da pessoa</label>
+            <input type="text" class="form-control" id="txtPeso">
+        </div>
+
+        <div class="form-group">
+            <label for="text">Informe a Altura da pessoa</label>
+            <input type="text" class="form-control" id="txtAltura">
+        </div>
+
+        <div class="mt-4">
+            <button class="btn btn-primary form-control" onclick="calcularIMC()">
+                Calcular IMC
+            </button>
+        </div>
+
+        <div class="alert alert-info mt-5" role="alert">
+            <p id="resultado"></p>
+        </div>
+
+        <script>
+            function calcularIMC() {
+
+                var peso = document.getElementById("txtPeso").value;
+                var altura = document.getElementById("txtAltura").value;
+
+                var imc = peso / (altura * altura);
+
+                var classsificarIMC = "";
+
+                if (imc <= 18.5) {
+                    classsificarIMC = "Abaixo do peso";
+                } else if (imc > 18.5 && imc <= 24.9) {
+                    classsificarIMC = "Peso normal";
+                } else if (imc > 24.9 && imc < 29.9) {
+                    classsificarIMC = "Sobrepeso";
+                } else {
+                    classsificarIMC = "Obeso";
+                }
+
+                document.getElementById("resultado").innerHTML = ` <p> O IMC = ${imc} </p> <p> Classificação do IMC = ${classsificarIMC} </p> `;
+
+                "Seu IMC é : " + imc.toFixed(2);
+
+                window.alert(`Seu IMC é ${imc}`);
+                console.log(`Seu IMC é ${imc}`);
+
+            }
+        </script>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+    </div>
+</body>
+
+</html>

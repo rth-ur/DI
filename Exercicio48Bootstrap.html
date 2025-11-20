@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 48 - Bootstrap</title>
+    <!-- Produto -->
+    <style>
+        .painel {
+            box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px,
+                rgba(0, 0, 0, 0.24) 0px 1px 2px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container-sm">
+        <div class="card mt-5 painel">
+            <div class="card">
+                <div class="card-header bg-primary text-white">
+                    Produto
+                </div>
+
+                <div class="card-body">
+
+                    <div class="text-end mb-3">
+                        <button type="button" class="btn btn-dark" data-bs-toggle="modal"
+                            data-bs-target="#modalProduto">
+                            Novo Produto
+                        </button>
+                    </div>
+
+                    <h5>Produtos Cadastrados</h5>
+
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Nome</th>
+                                <th>Preço</th>
+                                <th>Categoria</th>
+                                <th>Estoque</th>
+                                <th>Ações</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Mouse Bloody a91 </td>
+                                <td>130.00</td>
+                                <td>Periféricos</td>
+                                <td>45</td>
+                                <td>
+                                    <button class="btn btn-dark btn-sm">Editar</button>
+                                    <button class="btn btn-danger btn-sm">Excluir</button>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>Teclado Mecânico HyperX Alloy Origns</td>
+                                <td>450.00</td>
+                                <td>Periféricos</td>
+                                <td>20</td>
+                                <td>
+                                    <button class="btn btn-dark btn-sm">Editar</button>
+                                    <button class="btn btn-danger btn-sm">Excluir</button>
+                                </td>
+                            </tr>
+                        </tbody>
+
+                    </table>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalProduto" tabindex="-1" aria-labelledby="modalProdutoLabel" aria-hidden="true">
+
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="modalProdutoLabel">Novo Produto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+
+                    <div class="modal-body">
+
+                        <div class="mb-3">
+                            <label class="form-label">Nome</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Preço</label>
+                            <input type="number" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Categoria</label>
+                            <input type="text" class="form-control">
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Estoque</label>
+                            <input type="number" class="form-control">
+                        </div>
+
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                        <button type="button" class="btn btn-dark">Salvar</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

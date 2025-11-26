@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="Description" content="Enter your description here" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Exemplo 56 - JavaScript</title>
+</head>
+
+<body>
+    <div class="container-md">
+
+        <!-- QUADRADO AMARELO -->
+        <div class="alert alert-warning" role="alert">
+
+            <h1>Uso dos métodos (Push, pop, sort, lastIndexOf e IndexOf)</h1>
+            <ul>
+                <li>
+                    <strong>push(elemento)</strong><br>
+                    Adiciona um ou mais elementos ao <u>final</u> do array.
+                </li>
+
+                <li>
+                    <strong>pop()</strong><br>
+                    Remove o <u>último</u> elemento do array.
+                </li>
+
+                <li>
+                    <strong>sort()</strong><br>
+                    Ordena os elementos do array localmente e retorna o array ordenado.
+                </li>
+
+                <li>
+                    <strong>indexOf(elemento)</strong><br>
+                    Retorna o primeiro índice onde o elemento aparece.
+                </li>
+
+                <li>
+                    <strong>lastIndexOf(elemento)</strong><br>
+                    Retorna o último índice onde o elemento aparece.
+                </li>
+            </ul>
+        </div>
+
+        <!-- QUADRADO AZUL (AGORA FORA DO AMARELO) -->
+        <div class="alert alert-primary" role="alert">
+
+            <script>
+                var vetor1 = []
+                vetor1.push("joão");
+                vetor1.push("Pedro");
+                vetor1.push("Marcos");
+                vetor1.push("Lara");
+                vetor1.push("Líris");
+                vetor1.push("Rafael");
+                vetor1.push("Michele");
+                vetor1.push("Maria");
+                vetor1.push("Tiago");
+                vetor1.push("João");
+                vetor1.push("Alencar");
+                vetor1.push("Daniel");
+                vetor1.push("Lara");
+                vetor1.push("Maria");
+                vetor1.push("Reinaldo");
+                vetor1.push("Bruno");
+                vetor1.push("Lara");
+                vetor1.push("Lara");
+
+                document.write(`<h4>O vetor1 após a inclusão de diversos elementos usando o método push é [${vetor1}]</h4>`);
+
+                vetor1.pop();
+                vetor1.pop();
+                vetor1.pop();
+
+                document.write(`<h4>O vetor1 após a aplicação 3 vezes do método pop é [${vetor1}]</h4>`);
+
+                document.write("<h4>Agora vamos usar o método indexOf para recuperar um índice após informar um elemento.</h4>");
+
+                var indice = vetor1.indexOf("Rafael");
+                document.writeln(`<h4>O índice correspondente ao elemento Rafael, usando o método indexOf é ${indice}</h4>`);
+
+                document.write("<h4>Agora vamos usar o método LastindexOf para recuperar o último indice do elemento no vetor.</h4>");
+                var indice = vetor1.lastIndexOf("Lara");
+                document.writeln(`<h4>O índice correspondente ao elemento Lara, usando o método LastindexOf é ${indice}</h4>`);
+
+                document.writeln(`<h4>Agora vamos usar o método sort para ordenar de forma crescente os elementos do nosso vetor, o vetor resultante após a ordenação é [${vetor1.sort()}]</h4>`);
+            </script>
+
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
